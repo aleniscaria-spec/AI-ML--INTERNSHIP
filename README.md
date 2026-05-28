@@ -81,7 +81,7 @@ A machine learning classification model used to predict whether a tumor is malig
 
 # *Folder Structure*
 ```text
-Internship
+AI-ML--INTERNSHIP
 │
 ├── datasets
 ├── Day1
