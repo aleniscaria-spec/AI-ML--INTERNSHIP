@@ -82,12 +82,12 @@ A machine learning classification model used to predict whether a tumor is malig
 # *Folder Structure*
 Internship/
 │
+├── datasets/
 ├── Day1/
 ├── Day2/
 ├── Day3/
 ├── Day4/
-├── Day4_second/
-├── datasets/
+├── Day4_2nd/
 ├── models/
 └── README.md
 
