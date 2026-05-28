@@ -13,7 +13,7 @@ This repository contains the work completed during my AI & Machine Learning Inte
 
 ## **Projects Included**
 
-## 1.** Linear Regression – Wind Turbine Power Prediction**
+## 1. Linear Regression – Wind Turbine Power Prediction
 
 *A machine learning model developed to predict the power output of a wind turbine using:*
 
@@ -27,7 +27,7 @@ This repository contains the work completed during my AI & Machine Learning Inte
 - Model training and prediction
 - Manual regression calculations
 
-## 2.** KNN Regression – Fuel Consumption Prediction**
+## 2. KNN Regression – Fuel Consumption Prediction
 
 *A K-Nearest Neighbors Regression model created to estimate fuel consumption based on vehicle parameters.*
 
@@ -38,7 +38,7 @@ This repository contains the work completed during my AI & Machine Learning Inte
 - Model evaluation
 
 
-## 3.** Fuel Consumption Prediction**
+## 3. Fuel Consumption Prediction
 
 *A machine learning project developed to predict vehicle fuel consumption using temperature.*
 
@@ -49,7 +49,7 @@ This repository contains the work completed during my AI & Machine Learning Inte
 - Prediction system
 - Model evaluation
 
-## 4.** Logistic Regression – Machine Failure Prediction**
+## 4.Logistic Regression – Machine Failure Prediction
 
 *A classification model used to predict whether a machine failure will occur.*
 
