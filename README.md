@@ -80,7 +80,7 @@ A machine learning classification model used to predict whether a tumor is malig
 - Prediction using user input
 
 # *Folder Structure*
-'''text
+```text
 Internship/
 │
 ├── datasets/
@@ -91,7 +91,7 @@ Internship/
 ├── Day4_2nd/
 ├── models/
 └── README.md
-'''
+```
 
 **Author**
 
