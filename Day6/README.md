@@ -10,4 +10,4 @@ Random Forest Classifier
 Iris Dataset
 
 ## Outcome
-Built a multiclass classification model for species identification.
+Built a  classification model for species identification.
