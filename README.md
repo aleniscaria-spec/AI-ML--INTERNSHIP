@@ -1,97 +1,42 @@
-﻿# **AI & Machine Learning Internship Projects**
+﻿# AI/ML Internship Assignments
 
-This repository contains the work completed during my AI & Machine Learning Internship. The projects focus on machine learning concepts, data preprocessing, model training, prediction systems, and practical implementation using Python.
+This repository contains my AI/ML internship assignments, covering various machine learning algorithms and real-world prediction problems.
 
-## Technologies Used
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Matplotlib
-- Joblib
-- Git & GitHub
+## Assignments
 
-## **Projects Included**
+### Day 1 – Load vs Extension Prediction
+**Algorithm:** Linear Regression
 
-## 1. Linear Regression – Wind Turbine Power Prediction
+Predicts the extension of a material based on the applied load using a Linear Regression model.
 
-*A machine learning model developed to predict the power output of a wind turbine using:*
+### Day 2 – Power Output Predictor
+**Algorithm:** Multiple Linear Regression
 
-- Wind Speed
-- Blade Angle
-- Rotor Speed
-- Concepts Used
-- Data preprocessing
-- Feature selection
-- Linear Regression
-- Model training and prediction
-- Manual regression calculations
+Predicts power output using multiple input features and a Multiple Linear Regression model.
 
-## 2. KNN Regression – Fuel Consumption Prediction
+### Day 3 – Fuel Consumption Predictor
+**Algorithm:** K-Nearest Neighbors (KNN) Regression
 
-*A K-Nearest Neighbors Regression model created to estimate fuel consumption based on vehicle parameters.*
+Estimates fuel consumption based on vehicle characteristics using a KNN Regressor.
 
-- Concepts Used
-- KNN Regression
-- Feature scaling
-- Prediction using new input data
-- Model evaluation
+### Day 4 – Machine Failure Prediction,Breast Cancer Prediction
+**Algorithm:** Logistic Regression
+
+1.Classifies whether a machine is likely to fail based on operating conditions and sensor readings.  
+2.Predicts whether a tumor is benign or malignant using real-world breast cancer data.
+
+### Day 5 – Machine Failure Prediction,Real-World Machine Failure Analysis
+**Algorithm:** Decision Tree Classifier
+
+1.Predicts machine failure using operational and sensor data with a Decision Tree model.
+2.Analyzes a real-world machine failure dataset to classify equipment failure conditions.
+
+### Day 6 – Plant Species Identifier
+**Algorithm:** Random Forest Classifier
+
+Identifies plant species using flower measurements from the Iris dataset.
 
 
-## 3. Fuel Consumption Prediction
-
-*A machine learning project developed to predict vehicle fuel consumption using temperature.*
-
-### Concepts Used
-- Data preprocessing
-- KNN Regression
-- Model training
-- Prediction system
-- Model evaluation
-
-## 4.Logistic Regression – Machine Failure Prediction
-
-*A classification model used to predict whether a machine failure will occur.*
-
-### Features Used
-- Air Temperature
-- Process Temperature
-- Rotational Speed
-- Torque
-- Tool Wear
-- Product Type
-- Concepts Used
-- Label Encoding
-- Train-Test Split
-- Logistic Regression
-- Accuracy and Precision Evaluation
-- Model Saving using Joblib
----
-
-## Breast Cancer Prediction
-
-A machine learning classification model used to predict whether a tumor is malignant or benign.
-
-### Concepts Used
-- Logistic Regression
-- Data preprocessing
-- Train-test split
-- Accuracy evaluation
-- Prediction using user input
-
-# *Folder Structure*
-```text
-AI-ML--INTERNSHIP
-│
-├── datasets
-├── Day1
-├── Day2
-├── Day3
-├── Day4
-├── Day4_2nd
-├── models
-└── README.md
-```
 
 **Author**
 
