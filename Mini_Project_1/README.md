@@ -83,8 +83,6 @@ The project includes:
 
 ## Future Improvements
 
-* Hyperparameter tuning
-* Comparison with other regression models
 * Development of a graphical user interface
 * Deployment as a web application
 
