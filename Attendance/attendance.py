@@ -1,69 +1,59 @@
 import face_recognition as fr
 from PIL import Image, ImageDraw
 
-
 known_students = {
-    "student1": "student1.png",
-    "student2": "student2.jpg"}
+    "student1": "Attendance/dohni.jpg",
+    "student2": "Attendance/virat.jpg"}
+
 
 known_encodings = {}
 for name, file in known_students.items():
     image = fr.load_image_file(file)
     encodings = fr.face_encodings(image)
-
     if len(encodings) > 0:
         known_encodings[name] = encodings[0]
     else:
         print(f"No face found in {file}")
 
+group_image = fr.load_image_file("Attendance/group.png")
 
-group_image = fr.load_image_file("class.jpg")
 face_locations = fr.face_locations(group_image)
 print("Total faces detected:", len(face_locations))
-
 if len(face_locations) == 0:
     print("No students detected")
     exit()
 
 group_encodings = fr.face_encodings(group_image, face_locations)
-
+pil_image = Image.fromarray(group_image)
+draw = ImageDraw.Draw(pil_image)
 attendance = {}
-present_locations = []
+present_count = 0
+
 for student_name, known_encoding in known_encodings.items():
-
     found = False
-
     for location, encoding in zip(face_locations, group_encodings):
-
         match = fr.compare_faces([known_encoding], encoding)
-
         if match[0]:
             found = True
-            present_locations.append(location)
+            present_count += 1
+            top, right, bottom, left = location
+
+            draw.rectangle(
+                [(left, top), (right, bottom)],outline="green", width=5)
+            draw.text((left, top - 20), student_name, fill="green")
             break
     attendance[student_name] = found
 
-print("\nAttendance Report")
-present_count = 0
+print("*" * 50)
+print("Attendance Report")
 for student, status in attendance.items():
-
     if status:
         print(f"{student} - Present")
-        present_count += 1
     else:
         print(f"{student} - Absent")
 
 print(f"\nPresent: {present_count}/{len(attendance)}")
+print("*" * 50)
 
-pil_image = Image.fromarray(group_image)
-draw = ImageDraw.Draw(pil_image)
-
-for (top, right, bottom, left) in present_locations:
-    draw.rectangle(
-[(left, top), (right, bottom)],outline="green",width=3 )
-
-del draw
-
-pil_image.save("attendance.png")
-
-print("\nattendance.png saved successfully.")
+pil_image.save("Attendance/attendance.png")
+print("attendance.png saved successfully.")
